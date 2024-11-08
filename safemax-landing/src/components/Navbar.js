@@ -39,7 +39,7 @@ const Navbar = () => {
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#Appointment">Appointment</a></li>
         {/* Use a button for non-link behavior */}
-        <li><button onClick={handleAdminCMClick}>Admin CM</button></li>
+        <li><button onClick={handleAdminCMClick}>Admin CMS</button></li>
       </ul>
 
       {showAdminCM && (
