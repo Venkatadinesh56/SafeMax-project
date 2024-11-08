@@ -24,11 +24,18 @@ SafeMax project
   <li>Footer</li>
 </ul>
 
-<h2>Home page</h2>
+<h2>Website Screenshots</h2>
 <img src="https://drive.google.com/uc?export=view&id=1V28Y0kfyXYwTa2pRBErayPw-0mIieg2b" alt="Home Page" style="max-width: 100%; height: auto;" />
 <img src="https://drive.google.com/uc?export=view&id=1mq4b0nhQCJsRRGys_aoxhq_z_-j9sQGR" alt="Home Page" style="max-width: 100%; height: auto;" />
 <img src="https://drive.google.com/uc?export=view&id=1dOCOZhsZ5LN-5yUsGEm2MG9Qems8YV1q" alt="Home Page" style="max-width: 100%; height: auto;" />
 <img src="https://drive.google.com/uc?export=view&id=1PxKrLgqq-zYl8YSmIb9U3thDa3GOR_er" alt="Home Page" style="max-width: 100%; height: auto;" />
 <img src="https://drive.google.com/uc?export=view&id=13wmpul5CSzoSmgrvjFH5lFOV6gtQ42Bj" alt="Image" style="max-width: 100%; height: auto;" />
+
+<h3>Admin CMS</h3>
+<img src="https://drive.google.com/uc?export=view&id=1E1RrsIxoaI4tN9AH8Qeh2OYqjjaECsKq" alt="Image" style="max-width: 100%; height: auto;" />
+<img src="https://drive.google.com/uc?export=view&id=1yInySgt_RlwO4m0iX2AFvdEQREuEbYer" alt="Image" style="max-width: 100%; height: auto;" />
+<img src="https://drive.google.com/uc?export=view&id=15uaSTxblmyHMLvn3MG9a8YdzyFhftRKl" alt="Image" style="max-width: 100%; height: auto;" />
+
+
 
 
