@@ -1,5 +1,5 @@
-# SafeMax-project
-SafeMax project
+<center><h1>SafeMax-project</h1></center>
+
 <h2>Introduction</h2>
 <p>The SafeMax project is focused on creating a comprehensive platform designed to enhance safety and security in various environments, such as homes, workplaces, and public spaces. The platform integrates advanced technologies like real-time surveillance, smart alerts, and automated safety measures to provide users with an intuitive and secure experience. SafeMax aims to offer personalized solutions to address specific security needs, including monitoring, emergency response systems, and data-driven insights for preventive safety measures.</p>
 <p>The project emphasizes ease of use, offering both hardware (such as security cameras, motion sensors, and alarm systems) and software (like mobile apps and web dashboards) that work seamlessly together to provide a robust safety ecosystem. By leveraging modern technologies such as IoT (Internet of Things) and AI (Artificial Intelligence), SafeMax is dedicated to ensuring that individuals and businesses alike can operate in safer, more secure environments.</p>
