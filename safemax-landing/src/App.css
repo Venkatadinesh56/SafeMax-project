@@ -1,0 +1,622 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Navigation Bar Styles */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffdf6c;
+}
+
+/* Menu Toggle Button for Mobile */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #ff4757;
+}
+
+/* About Us Section */
+.about {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Services Section */
+.services {
+  background: linear-gradient(135deg, #42e695, #3bb2b8);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+/* Why Choose Us Section */
+.why-choose {
+  background: linear-gradient(135deg, #f7797d, #fbd786, #c6ffdd);
+  color: #333;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose li {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: linear-gradient(135deg, #ee9ca7, #ffdde1);
+  color: #333;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials p {
+  font-style: italic;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+/* Appointment Section */
+.Appointment {
+  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.Appointment form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Appointment input,
+.Appointment textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+}
+
+.Appointment button {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Appointment button:hover {
+  background-color: #ff4757;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Initially hide nav links on mobile */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .nav-links.active {
+      display: flex; /* Show nav links when active */
+  }
+
+  .menu-toggle {
+      display: inline-block; /* Show menu toggle on mobile */
+  }
+
+  .service-item {
+      width: 80%;
+  }
+
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero p {
+      font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Appointment form adjustments for mobile */
+  .Appointment input[type="date"],
+  .Appointment input[type="time"] {
+    font-size: 1rem;
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%; /* Make inputs span the full width */
+    box-sizing: border-box;
+  }
+
+  .Appointment form {
+    width: 90%;
+    margin: auto;
+    padding: 0 10px; /* Add some padding for mobile view */
+  }
+
+  .Appointment input,
+  .Appointment textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .Appointment button {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 30px;
+  }
+}
+
+
+/* General styles for the component */
+.appointment-data {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.appointments-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.appointments-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Status color styles */
+.confirmed {
+  color: green;
+  font-weight: bold;
+}
+
+.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.canceled {
+  color: red;
+  font-weight: bold;
+}
+
+/* Loading and Error messages */
+.loading, .error {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.loading {
+  color: #4CAF50;
+}
+
+.error {
+  color: #f44336;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .appointment-data {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .appointments-table {
+    font-size: 14px;
+    border-collapse: collapse;
+  }
+
+  .appointments-table th, .appointments-table td {
+    padding: 8px;
+  }
+
+  /* Stack table headers vertically on mobile */
+  .appointments-table th {
+    font-size: 16px;
+  }
+
+  .appointments-table td {
+    font-size: 14px;
+  }
+
+  /* Mobile view adjustments */
+  .appointments-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .appointments-table th, .appointments-table td {
+    padding: 10px;
+  }
+  
+  .appointments-table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .appointments-table td {
+    text-align: left;
+    display: block;
+    padding: 8px 0;
+  }
+  
+  .appointments-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .appointments-table th {
+    font-size: 16px;
+  }
+}
+.appointments-table select {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.appointments-table select:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+
+/* Styling for Navbar */
+.navbar {
+  position: relative;
+  /* Add other styles for your navbar */
+}
+
+/* Overlay for Admin CM */
+.admin-cm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 999; /* Ensure it's in front of other sections */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for AppointmentData component (it will be centered in the overlay) */
+.admin-cm-overlay .Appointment {
+  padding: 20px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  z-index: 1000;
+  /* Add additional styling for your appointment form */
+}
+
+/* Navbar and other section styles can remain as is */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: none; /* This can be for mobile views */
+}
+/* Styles for the appointment data */
+.appointment-data {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-data h2 {
+  color: #333; /* Dark color for the heading */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.appointments-table th {
+  background-color: #4CAF50; /* Green background for headers */
+  color: white; /* White text for header */
+}
+
+.appointments-table td {
+  color: #333; /* Default text color for data */
+}
+
+/* Optional: Change text color for specific rows or columns if needed */
+.appointments-table td {
+  color: #4a4a4a; /* Slightly lighter gray for the text */
+}
+
+.appointments-table select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* src/styles.css */
+.appointment-data {
+  padding: 20px;
+  max-height: 500px; /* Set the max height to your desired value */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.appointments-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.loading {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* src/styles.css */
+
+/* General navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Logo styling */
+.navbar .logo {
+  font-size: 24px;
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar links are hidden by default on mobile */
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Show the hamburger icon on mobile */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Navbar links when active (menu toggled) */
+  .nav-links.active {
+    display: flex;
+  }
+}
